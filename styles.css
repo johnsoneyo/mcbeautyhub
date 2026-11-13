@@ -62,13 +62,6 @@ dialog::backdrop {
   transition: transform .2s ease, background-color .2s ease, box-shadow .2s ease;
 }
 
-.whatsapp-label {
-  display: none;
-  font-size: .78rem;
-  font-weight: 800;
-  letter-spacing: .04em;
-}
-
 .whatsapp-float:hover,
 .whatsapp-float:focus-visible {
   transform: translateY(-3px) scale(1.04);
@@ -104,14 +97,8 @@ dialog::backdrop {
   .whatsapp-float {
     right: 2rem;
     bottom: 2rem;
-    width: auto;
+    width: 4rem;
     height: 4rem;
-    gap: .55rem;
-    padding: 0 1.15rem 0 .9rem;
-  }
-
-  .whatsapp-label {
-    display: inline;
   }
 }
 
