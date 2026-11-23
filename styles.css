@@ -38,6 +38,33 @@ body {
   transform: none;
 }
 
+.product-slider {
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+}
+
+.product-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.product-slider .product {
+  flex: 0 0 86%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@media (min-width: 640px) {
+  .product-slider .product { flex-basis: 47%; }
+}
+
+@media (min-width: 1024px) {
+  .product-slider .product { flex-basis: 31%; }
+}
+
+@media (min-width: 1280px) {
+  .product-slider .product { flex-basis: 23.5%; }
+}
+
 dialog::backdrop {
   background: rgba(11, 11, 13, .72);
   backdrop-filter: blur(5px);
